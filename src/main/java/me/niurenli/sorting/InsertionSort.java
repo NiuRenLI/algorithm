@@ -15,12 +15,10 @@ public class InsertionSort {
      * @param <T>      泛型
      */
     public static <T extends Comparable> void insertion(T[] waitSort) {
-        T key;
         int length = waitSort.length;
-
         for (int i = 1; i < length; i++) {
             //比较基准
-            key = waitSort[i];
+            T key = waitSort[i];
             int j = i - 1;
             while (j >= 0 && key.compareTo(waitSort[j]) < 0) {
                 waitSort[j + 1] = waitSort[j];
@@ -33,7 +31,7 @@ public class InsertionSort {
 
 
     public static void main(String[] args) {
-        String[] strings = {"d", "b", "a", "c","q","w","e","g"};
+        String[] strings = {"d", "b", "a", "c", "q", "w", "e", "g"};
         insertion(strings);
         for (String s : strings) {
             System.out.println(s);
