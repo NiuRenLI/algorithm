@@ -7,7 +7,7 @@
 4：最优/最差/平均时间复杂度分析。
 5：随机算法。
 
-3种基于比较的排序算法：冒泡、选择、插入
+3种基于比较的时间复杂度为O(N^2)的排序算法：冒泡、选择、插入
 先比较，然后判断是否需要交换。
 简单，但是效果差，时间复杂度O(N^2);
 
@@ -30,3 +30,9 @@ while swapped
 2:Pick the next card and insert it into its proper sorted order
 3:Repeat previous step for all cards
 
+基于D&C的的排序
+归并排序（Merge Sort）
+时间复杂度为O(N·log^N)
+
+快速排序（Quick Sort）
+时间复杂度有两种情况，对非随即版本，为O(N^2)
