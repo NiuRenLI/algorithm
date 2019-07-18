@@ -33,7 +33,7 @@ public class Bubble {
      * 通过do...while实现冒泡排序 生序
      *
      * @param needSort 待排序数组
-     * @param <T>      泛型
+     * @param <T>      泛型，最终会擦除为Comparable子类
      */
     public static <T extends Comparable> void bubbleByDoWhile(T[] needSort) {
         boolean swap;
